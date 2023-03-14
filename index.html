@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common CSS Properties</title>
+    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Common CSS Properties</h1>
+    </header>
+    <main>
+
+        <section id="visualstyles">
+            <h2><span class="highlight">Pertaining to Visual Styles:</span></h2>
+            <article>
+                <table class="font-family">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>font-family</td>
+                            <td>Used to express the font desired</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    font-family: Helvetica;
+                    }
+                </p>
+                <aside>When two words the font should be declared in parentheis</aside>
+            </article>
+
+            <article>
+                <table class="font-size">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>font-size</td>
+                            <td>Used to increase or decrease size of typography</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    font-size: 200px;
+                    }
+                </p>
+                <aside>Size can be set by percentage, ems and pixels</aside>
+            </article>
+
+            <article>
+                <table class="font-weight">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>font-weight</td>
+                            <td>Used to <span class="dark">darken</span> or <span class="light">lighten</span> text font</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    font-weight: 400;   
+                    }
+                </p>
+                <aside>Size can be set by numerical values where 400 is standard 700 is bold it can also take the values of: normal, bolder, lighter, bold</aside>
+            </article>
+
+            <article>
+                <table class="text-align">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>text-align</td>
+                            <td>Aligns text to it's parent element</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    text-align: justify;  
+                    }
+                </p>
+                <aside>this property takes one of four values: right, left, center and justify which spaces out text to align with the left and right of the parent element</aside>
+            </article>
+
+            <article>
+                <table class="color/background-color">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>color</td>
+                            <td>sets <span class="colorex">foreground</span> color</td>
+                        </tr>
+                        <tr>
+                            <td>background-color</td>
+                            <td>sets <span class="backgroundex">background</span> color</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    color: red;    
+                    }
+                </p>
+                <p>
+                    h1{
+                    background-color: rgba(125,125,125,1);
+                    }
+                </p>
+                <aside>rgba allows us to experiment with specific shades of colors over naming specific colors and opacity with the alpha value</aside>
+            </article>
+
+            <article>
+                <table class="opacity">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>opacity</td>
+                            <td><span class="transparent">transparancy</span> vs <span>opaqueness</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    opacity: .5;    
+                    }
+                </p>
+                <aside>While rgba allows us to modify color and opacity can't argue with more tools for specificity. 0 is translucent 1 is opaque</aside>
+            </article>
+
+            <article>
+                <table class="background-image">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>background-image</td>
+                            <td>sets the image background to a url relative or absolute that you specify</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    background-image: url();    
+                    }
+            </p>
+                <aside>When specifying a absolute path "" are used around the path within the attribute url</aside>
+            </article>
+        </section>
+        
+        <section id="boxmethod">
+            <h2><span class="highlight">Pertaining to the Box Method:</span></h2>
+            <article>
+                <table class="box">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>height/width</td>
+                            <td class="height-widthex">scale how tall or how wide an element is respectively.</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td class="paddingex">adjust the space within the border and the element itself. think insulation.</td>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td class="borderex">adjust the containing box around all elements. There are ways to change the shape to circular.</td>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td class="marginex">scale the distance between an element's box and surrounding elements</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    height: 200px;
+                    width: 100%;
+                    padding: 10px 20px 5px;
+                    margin: 5px 2px 8px 10px;
+                    border: 5px solid red
+                    }
+                </p>
+                <aside>
+                height/width: can be set in pixels, ems and percentages.
+                padding along with margin can be shorthanded. 
+                It's always represented clockwise. 3 numbers = top, left/right, bottom
+                You can create a border that is a perfect circle by first creating an element with the same width and height, and then setting the border-radius equal to half the width of the box, which is 50%
+                </aside>
+            </article>
+            
+            <article>
+                <table class="overflow">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>overflow</td>
+                            <td>controls content that spills or overflows out of it's box.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    h1{
+                    overflow: hidden;    
+                    }
+            </p>
+                <aside class="overflowex">
+                As it suggests, hidden hides any content that spills over. 
+                Then there's scroll which'll create a scrollbar in a browser to view the content spilt. (scroll)
+                Finally hidden. Which hides all spilt over content. It's important to note that the element in question needs to have definite dimensions otherwise it'll keep expanding.
+                </aside>
+            </article>
+
+            <article>
+                <table class="visibility">
+                    <thead>
+                        <th scope="col">Property</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>visibility</td>
+                            <td>elements can be hidden from view with this property</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Syntax:</h3>
+                <p>
+                    <span class="visibilityex">h1</span>{
+                    visbility: hidden;    
+                    }
+            </p>
+                <aside>
+                    Note in this example above the space reserved for the h1 example above is still present. However it's blank.
+                    It can also take the values: collapse, and visible which is the default input
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+
+<!--
+    <article>
+        <table class="property value">
+            <thead>
+                <th scope="col">Property</th>
+                <th scope="col">Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>property value</td>
+                    <td>property description</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Syntax:</h3>
+        <p>h1{
+        example: input;    
+        }</p>
+        <aside>Notes, conditions and other inputs</aside>
+    </article>
+-->
+
+
+<!--/Users/hassanali/Projects/html-css-cheatsheet-starting/index.html-->
+</html>
+
