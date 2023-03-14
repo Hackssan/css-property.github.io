@@ -24,7 +24,7 @@ table{
 }
 
 html{
-    background-image: url(../images/whitepattern.jpg);
+    background-image: url(whitepattern.jpg);
 }
 
 .transparent{
@@ -32,7 +32,7 @@ html{
 }
 
 .background-image{
-    background-image: url(../images/white:gold.jpg);
+    background-image: url(white:gold.jpg);
 }
 
 .text-align{
